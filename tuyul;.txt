@@ -1,0 +1,41 @@
+package com.belajar;
+//method non void
+public class Mobilnyo {
+    String warna;
+    int tahun_produksi;
+    int nomor_rangka;
+    int nomor_mesin;
+    //method mengisi vriabel instance
+    void isi (String warna, int tahun_produksi, int nomor_rangka, int nomor_mesin){
+        this.warna = warna;
+        this.tahun_produksi = tahun_produksi;
+        this.nomor_mesin = nomor_mesin;
+        this.nomor_rangka = nomor_rangka;
+    }
+    //method menampilkan isi variabel
+    String ambil_warna (){
+        return warna;
+    }
+    int ambil_tahun_produksi (){
+        return tahun_produksi;
+    }
+    int ambil_nomor_mesin (){
+        return nomor_mesin;
+    }
+    int ambil_nomor_rangka (){
+        return nomor_rangka;
+    }
+    public static void main(String[] args) {
+        Mobilnyo mobilNiaga = new Mobilnyo();
+        //proses pemanggilan method void 
+        mobilNiaga.isi("putih" , 1945, 234, 567);
+        //tampilan
+        System.out.println("warnanya adalah -->> : " + mobilNiaga.ambil_warna());
+        System.out.println("tahun produksi nya adalah  -->> : " + mobilNiaga.ambil_tahun_produksi());
+        System.out.println("nomor mesin nya adalah  -->> : " + mobilNiaga.ambil_nomor_mesin());
+        System.out.println("nomor rangka nya adalah  -->> : " + mobilNiaga.ambil_nomor_rangka());
+        
+    }
+
+    
+}

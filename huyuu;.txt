@@ -1,0 +1,20 @@
+package com.belajar;
+//lathan method static
+public class Mobilana {
+    //Variabel static
+    static String Warna = "biru";
+    static int tahun_produksi = 1945;
+    //method static
+    static void ubah() {
+        Warna = "biru"; 
+    }
+    static void tampil(){
+        System.out.println(Warna);
+        System.out.println(tahun_produksi);
+    }
+    public static void main(String[] args) {
+        //pemanggilan method static
+        Mobilana.ubah();
+        Mobilana.tampil();
+    }
+}
